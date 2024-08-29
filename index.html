@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+
+<head>
+  <title>MY PORTFOLIO</title>
+  <!-- linking the css file -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <style>
+
+    .tab-content {
+      display: none;
+    }
+    .active-tab {
+      display: block;
+    }
+    .al {
+      font-weight: bold;
+    }
+    .worklist {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr); 
+      gap: 20px; 
+      justify-items: center;
+    }
+    .edit-work video {
+      width: 100%;
+      max-width: 500px; 
+      border-radius: 50px;
+      transition: transform 0.5s ease-in-out colo;
+      color: #ffffff;
+    }
+    .edit-work video:hover {
+      transform: scale(1.25); 
+    }
+  </style>
+  <script src="https://kit.fontawesome.com/e0159a9b34.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div id="header">
+    <div class="container">
+      <img src="images/n.png" class="img-a" alt="">
+      <img src="images/dd.png" class="logo">
+      <nav>
+        <ul>
+          <li><a href="#header ">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <i class="fa-regular fa-circle-xmark"></i>
+        </ul>
+        <i class="fa-regular fa-eye"></i>
+      </nav>
+      <div class="header-text">
+        <p style="font-family: cursive;">Web developer and Video editor</p>
+        <h1>Hi, I am <span>आदर्श त्रिपाठी </span> <br> from India</h1>
+      </div>
+    </div>
+  </div>
+  
+  <!-- ABOUT SECTION STARTS HERE -->
+  <div id="about">
+    <div class="container">
+      <div class="row">
+        <div class="col-1">
+          <img src="images/mm.png">
+        </div>
+        <div class="col-2">
+          <h1 class="sub">ABOUT ME</h1>
+          <p class="ab">Hi My name is Adarsh Tripathi, I'm a third year engineering student at Niet college
+            My major is Artificial Intelligence and machine learning.
+            I am a web developer and video editor.
+            I have worked on many projects and have gained a lot of experience in this field.
+            I am a hardworking person and I am always ready to learn new things.
+          </p>
+          <div class="tab">
+            <p class="t1 al" onclick="opentab(event,'Skills')">Skills</p>
+            <p class="t1" onclick="opentab(event,'Education')">Education</p>
+            <p class="t1" onclick="opentab(event,'Experience')">Experience</p>
+          </div>
+          <div class="tab-content active-tab" id="Skills">
+            <ul>
+              <li><span>Web development</span><br>Web designing</li>
+              <li><span>Video editing</span><br>I create videos with great visual</li>
+              <li><span>Content creation</span><br>Creating content for Youtube channels</li>
+              <li><span>Software</span>
+                <ul>
+                  <li>Adobe Premiere Pro</li>
+                  <li>Adobe After Effects</li>
+                  <li>Photoshop</li>
+                  <li>Davinci</li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <div class="tab-content" id="Education">
+            <ul>
+              <li><span>High school 2020-22</span><br>Uttarakhand Public school</li>
+              <li><span>College 2022-26</span><br>Niet college</li>
+              <li><span>University</span><br>AKTU</li>
+            </ul>
+          </div>
+          <div class="tab-content" id="Experience">
+            <ul>
+              <li><span>Learning</span><br>Web development</li>
+              <li><span>6 month experience in Video editing</span><br>Currently working as a video editor for a Youtube channel</li>
+              <li><span>Internship</span><br>Content creation</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- services section -->
+   <div id="services">
+    <div class="container">
+      <h1 class="sub">My services</h1>
+      <div class="Services-list">
+          <div>
+            <i class="fa-solid fa-code" style="color: aqua;"></i>
+            <h2>Web designing</h2>
+            <p>I provide webdesigning services including deployemnt</p>
+            <a href="#">Learn more</a>
+          </div>
+          <div>
+            <i class="fa-solid fa-video" style="color: rgb(29, 216, 101);"></i>
+            <h2>Video editing</h2>
+            <p> I edit videos irrespective of genere, It can be of any format 
+              <ul style="font-size: 22px; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">
+                <li>Reel</li>
+                <li>shorts</li>
+                <li>Youtube videos</li>
+                <li>documentries</li>
+              </ul> </p>
+            <a href="#">Learn more</a>
+          </div>
+          <div>
+            <i class="fa-brands fa-youtube" style="color: red;"></i>
+            <h2>Thumbnail maker</h2>
+            <p>I make eye cacthy and interesting thumbnails</p>
+            <a href="#">Learn more</a>
+          </div>
+
+      </div>
+
+      </div>
+   </div>
+<!-- --------------------------portfolio-------------- -------------------------------------------------- -->
+
+<div id="portfolio">
+  <div class="container">
+
+    <h1 class="sub">My Work</h1>
+    <div class="worklist">
+      <div class="edit-work">
+        <video loop controls autoplay muted src="images/1(1).mp4" width="500px" style="border-radius: 50px;"></video>
+    
+      </div>
+      <div class="edit-work">
+        <video loop controls autoplay muted src="images/55.mp4" width="500px" style="border-radius: 40px;"></video>
+      </div>
+      <div class="edit-work">
+        <video loop controls autoplay muted src="images/8.mp4" width="500px" style="border-radius: 50px;"></video>
+      </div>
+      <div class="edit-work">
+        <video loop controls autoplay muted src="images/33.mp4" width="500px" style="border-radius: 50px;"></video>
+      </div>
+      <div class="edit-work">
+        <video loop controls autoplay muted src="images/66.mp4" width="500px" style="border-radius: 50px;"></video>
+      </div>
+      <div class="edit-work">
+        <video loop controls autoplay muted src="images/44.mp4" width="500px" style="border-radius: 50px; margin-top: 10px;"></video>
+        
+      </div>
+    </div>
+  </div>
+</div>
+<!-- ---------------------------------------CONTACT SECTION--------------------------------------------
+  -->
+<div id="contact">
+  <div class="container">
+    <div class="row">
+      <div class="contact-left">
+        <h1 class="sub">Contact me</h1>
+        <p> <i style="color: rgb(255, 149, 0);" class="fa-regular fa-envelope"></i> adarshtrip2306@gmail.com</p>
+        <p > <i style="color: rgb(55, 255, 0);" class="fa-brands fa-whatsapp"></i>  9310495616 </p>
+        <div class="socialicons">
+          <a href="www.linkedin.com/in/adarsh-tripathi-529199260"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="https://x.com/adarshtrip2306"><i class="fa-brands fa-x-twitter"></i></a>
+
+          <a href="https://github.com/iaadarsh23/personalportfolio.git"><i class="fa-brands fa-github"></i></a>
+        </div>
+          <a href="images/MY RESUME.pdf" download class="button btn2"> Download Cv</a>
+        
+      </div>
+      <div class="contact-right">
+        <form action="">
+          <input type="text" placeholder="Name" required>
+          <input type="email" placeholder="Email" required>
+          <textarea name="" rows="6" placeholder=" Your Message"></textarea>
+          <button type="submit" class="button btn2">Send</button>
+        </form>        
+      </div>
+    </div>
+  </div>
+  <div class="copyright">
+    <p> Copyright © 2024 Adarsh Tripathi.</p>
+
+  </div>
+</div>
+
+
+
+
+  <script>
+    var tablinks = document.getElementsByClassName('t1');
+    var tabcontents = document.getElementsByClassName('tab-content');
+    function opentab(event, tabname) {
+      for (var i = 0; i < tabcontents.length; i++) {
+        tabcontents[i].classList.remove('active-tab');
+      }
+      for (var i = 0; i < tablinks.length; i++) {
+        tablinks[i].classList.remove('al');
+      }
+      document.getElementById(tabname).classList.add('active-tab');
+      event.currentTarget.classList.add('al');
+    }
+    document.addEventListener('DOMContentLoaded', function() {
+      document.querySelector('.t1').click();
+    });
+  </script>
+  <script>
+    window.onload = function() {
+      // Calculate 75% of the screen width and height
+      const width = window.screen.availWidth * 0.75;
+      const height = window.screen.availHeight * 0.75;
+  
+      // Resize the window
+      window.resizeTo(width, height);
+      
+      // Center the window
+      const x = (window.screen.availWidth - width) / 2;
+      const y = (window.screen.availHeight - height) / 2;
+      window.moveTo(x, y);
+    };
+  </script>
+  
+    
+
+</body>
+</html>
